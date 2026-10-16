@@ -8,6 +8,14 @@ A dark Omarchy Quattro theme built around the Roadster wall-ride photograph. Eig
 
 Built from [Build Omarchy Themes](https://github.com/tcballard/build-omarchy-themes) guidance and the Omarchy theme starter by Tom Ballard. [Media and source credits](CREDITS.md).
 
+## Desktop screenshots
+
+Captured on my Omarchy desktop, 16 October 2026.
+
+![Roadster wall-ride wallpaper with the Omarchy top bar](docs/screenshots/wall-ride-desktop.png)
+
+![Roadster inverted wallpaper with the Omarchy top bar and dock](docs/screenshots/inverted-desktop.png)
+
 ## Install
 
 ```bash
@@ -39,7 +47,7 @@ The default is `backgrounds/01-wall-ride-8k.png`. The other seven images remain 
 
 Quattro generation, Git-installed staging, wallpaper selection and switching were checked offline against upstream commit `51bfd1dbaa1b5f790e19623faf2745945d40c796`. Text contrast is 13.89:1; accent contrast is 5.27:1. [Validation details](docs/VALIDATION.md).
 
-Live desktop acceptance and a real screenshot are pending. [Acceptance record](docs/ACCEPTANCE.json). No marketplace listing or stable release is claimed.
+Real desktop screenshots are shown above; the full live acceptance checklist remains pending. [Acceptance record](docs/ACCEPTANCE.json). No marketplace listing or stable release is claimed.
 
 ## Development
 
