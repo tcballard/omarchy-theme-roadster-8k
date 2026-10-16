@@ -1,0 +1,176 @@
+{
+  "asset": "backgrounds/10-starlight-8k.png",
+  "source": {
+    "filename": "5B8D532D-8128-45E8-9B06-8A7D750CD68D.jpeg",
+    "sha256": "f51f6ef5e5319698469a3feabb6213be46f9b292614b9a1afaca4cce296347a7",
+    "dimensions": [
+      900,
+      900
+    ],
+    "provenance": "User-supplied cinematic automotive artwork; media rights separate from code licence."
+  },
+  "export": {
+    "file": "roadster-starlight-8k.png",
+    "dimensions": [
+      8192,
+      8192
+    ],
+    "space": "srgb",
+    "depth": "uchar",
+    "bytes": 38736392,
+    "sha256": "b2b8185c2e8f8aced6baeb4d085636955b0ccac5855704e241b7e934343e1cb7",
+    "decoded": true
+  },
+  "method": {
+    "tool": "built-in image_gen",
+    "contextual_passes": 2,
+    "native_crop_dimensions": [
+      {
+        "id": "p1-0",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-1",
+        "dimensions": [
+          1355,
+          1161
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-2",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-3",
+        "dimensions": [
+          1161,
+          1355
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-4",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-5",
+        "dimensions": [
+          1161,
+          1355
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-6",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-7",
+        "dimensions": [
+          1355,
+          1161
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p1-8",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p2-0",
+        "dimensions": [
+          1363,
+          1154
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p2-1",
+        "dimensions": [
+          1385,
+          1136
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p2-2",
+        "dimensions": [
+          1327,
+          1186
+        ],
+        "status": "accepted"
+      },
+      {
+        "id": "p2-3",
+        "dimensions": [
+          1239,
+          1269
+        ],
+        "status": "accepted"
+      }
+    ],
+    "assembly_dimensions": [
+      {
+        "pass": 1,
+        "dimensions": [
+          1800,
+          1800
+        ],
+        "registered": 9
+      },
+      {
+        "pass": 2,
+        "dimensions": [
+          8192,
+          8192
+        ],
+        "registered": 4
+      }
+    ],
+    "protected_regions": {
+      "source_coordinates": [
+        [
+          0,
+          0,
+          900,
+          390
+        ],
+        [
+          295,
+          590,
+          375,
+          650
+        ],
+        [
+          750,
+          605,
+          805,
+          660
+        ]
+      ],
+      "reason": "Retain source upper star placement, ambiguous cabin detail and unreadable plate. Three top-row registered patches contribute no pixels within the protected sky; accepted registration count differs from effective contribution."
+    }
+  },
+  "detail": "AI reconstructed; 8K describes export dimensions, not native generation."
+}

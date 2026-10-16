@@ -16,3 +16,5 @@ Repository packaging: 03-hover-8k.webp uses lossless WebP because the GitHub blo
 
 Poster addition: ninth wallpaper, lossless sRGB PNG at 8192 × 4608. Fully decoded and visually reviewed at full-frame and 100% detail. Existing eight wallpaper bytes and default selection preserved.
 PASS for the ninth-image update: portable repository checks and five Node tests; all nine image checksums; real upstream headless Git-installed staging, nine-image cycle, default, wraparound and remembered selection. Live desktop interaction is not implied by this check.
+
+Starlight addition: tenth wallpaper, lossless RGB8 sRGB PNG at 8192 × 8192, copied byte-for-byte from the reviewed and fully decoded export. Original received two contextual passes; Tokyo Night is a separate 1254 × 1254 colour edit enlarged to 8K. Existing nine wallpapers and wall-ride default are unchanged. No new live desktop acceptance is claimed.
