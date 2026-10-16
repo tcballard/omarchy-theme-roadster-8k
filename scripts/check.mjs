@@ -10,6 +10,9 @@ export function check(base=root) {
   const tree=files(base);
   for(const f of tree) {
     if(f.startsWith('.template/blueprint/') || f.startsWith('scripts/') || f.startsWith('tests/')) continue;
+    // Wallpaper bytes can coincidentally contain template-token patterns.
+    // Only text assets participate in placeholder expansion.
+    if (/\.(png|jpe?g|webp|gif|bmp|mp4|m4v|mov|webm|mkv|avi)$/i.test(f)) continue;
     assert(!/@@[A-Z_]+@@/.test(fs.readFileSync(path.join(base,f),'utf8')),`Unresolved token in ${f}`);
   }
   const read=f=>fs.readFileSync(path.join(base,f),'utf8');
