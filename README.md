@@ -4,7 +4,7 @@
 
 <p align="center"><a href="https://github.com/tcballard/omarchy-badges"><img alt="Built for Omarchy: Theme" height="20" src="https://raw.githubusercontent.com/tcballard/omarchy-badges/75975e5b5bf75e7ede3764bcd2950046f7abfe2c/badges/v1/omarchy-theme.svg"></a></p>
 
-A dark Omarchy Quattro theme built around the Roadster wall-ride photograph. Nine wallpapers, enhanced with two contextual image passes and packaged as lossless images at 8,192 pixels on the long edge. The wall-ride image is selected on first application.
+A dark Omarchy Quattro theme built around the Roadster wall-ride photograph. Ten wallpapers, enhanced with two contextual image passes and packaged as lossless images at 8,192 pixels on the long edge. The wall-ride image is selected on first application.
 
 Built from [Build Omarchy Themes](https://github.com/tcballard/build-omarchy-themes) guidance and the Omarchy theme starter by Tom Ballard. [Media and source credits](CREDITS.md).
 
@@ -39,9 +39,11 @@ Red marks focused controls, active borders, selected rows and shell activity. Si
 
 ## Wallpapers
 
-The default is `backgrounds/01-wall-ride-8k.png`. The other eight images remain available through wallpaper cycling. Omarchy remembers your selection when switching away and back. Applying the current theme again cycles to the next wallpaper.
+The default is `backgrounds/01-wall-ride-8k.png`. The other nine images remain available through wallpaper cycling. Omarchy remembers your selection when switching away and back. Applying the current theme again cycles to the next wallpaper.
 
 8K describes export dimensions, not native AI generation. Images retain their original proportions. The set includes the ROADSTER event poster at 8192 × 4608. Its original lettering is preserved; see [processing evidence](docs/POSTER-PROCESSING.json).
+
+The Starlight artwork adds a square 8192 × 8192 scene with raised doors and a starry sky. [Processing details](docs/STARLIGHT-PROCESSING.json).
 
 ## Validation
 
