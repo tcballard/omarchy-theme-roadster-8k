@@ -1,0 +1,1252 @@
+{
+  "created": "2026-10-16T14:26:37.652Z",
+  "contract": {
+    "passes": 2,
+    "longestEdge": 8192,
+    "aspect": "source-preserved",
+    "format": "PNG",
+    "mode": "RGB8 sRGB",
+    "detail": "AI-reconstructed; native crop assembly then proportional export"
+  },
+  "capabilities": {
+    "editor": "built-in image_gen, two local reference inputs",
+    "raster": "sharp 0.35.5 / libvips 8.18.7",
+    "registration": "bounded similarity using low-frequency luminance/gradient correspondence; no local warps",
+    "blend": "normalized overlap with confidence, exposure field and 20% feather"
+  },
+  "jobs": [
+    {
+      "id": "09-poster",
+      "material": "Wide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.",
+      "source": {
+        "filename": "9A1D3B07-0A35-4DEF-B8A2-41A619D9DD9F.jpeg",
+        "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/original/9A1D3B07-0A35-4DEF-B8A2-41A619D9DD9F.jpeg",
+        "sha256": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+        "width": 2048,
+        "height": 1152,
+        "orientation": 1,
+        "space": "srgb",
+        "depth": "uchar",
+        "alpha": false,
+        "iccSha256": null
+      },
+      "context": {
+        "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+        "sha256": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+        "width": 2048,
+        "height": 1152,
+        "conversion": "oriented RGB8 sRGB working copy; source untouched"
+      },
+      "patches": [
+        {
+          "id": "p1-0",
+          "pass": 1,
+          "core": [
+            0,
+            0,
+            683,
+            384
+          ],
+          "box": [
+            0,
+            0,
+            820,
+            461
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/0-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:08.912Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "aaea514318929352d5154ea808d3fcd22080bec988aeffa74be5a4d9161afe3b",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/0-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-0-attempt1.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "8c0afff0a7654de7579a47a86638699d0f953d858e8a22021e7003302eefa31c"
+            }
+          ],
+          "status": "rejected",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "aaea514318929352d5154ea808d3fcd22080bec988aeffa74be5a4d9161afe3b",
+          "registration": {
+            "tx": 5,
+            "ty": -4,
+            "scale": 1.0218,
+            "rot": 0.002905973204570559,
+            "reliable": false,
+            "reason": "Unreliable global correspondence: original retained",
+            "score": 304.6846567360153,
+            "initialScore": 384.04202001083746,
+            "residual": 17.45521861037596,
+            "ncc": 0.20715788428060172,
+            "luminanceResidual": 15.44502846552162,
+            "hitBounds": true,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 4.32,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 13.407879902911162,
+            "workingSize": [
+              256,
+              144
+            ],
+            "maskCoverage": 0,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": null,
+          "fallbackReason": "Unreliable global correspondence: original retained"
+        },
+        {
+          "id": "p1-1",
+          "pass": 1,
+          "core": [
+            683,
+            0,
+            1365,
+            384
+          ],
+          "box": [
+            547,
+            0,
+            1501,
+            461
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/1-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:09.396Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (954:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "75b1f2dd1bdcc70647d75546d283e19f5ed2a8342f423300e28ae78275f14503",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/1-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-1-attempt1.png",
+              "width": 1804,
+              "height": 872,
+              "sha256": "c7231e92733da3f816b71694e1daa0628fa8ee01753edc7bd712b60903bea9c0"
+            }
+          ],
+          "status": "rejected",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (954:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "75b1f2dd1bdcc70647d75546d283e19f5ed2a8342f423300e28ae78275f14503",
+          "registration": {
+            "tx": -1.15,
+            "ty": 0,
+            "scale": 0.9663999999999999,
+            "rot": -0.006754424205218055,
+            "reliable": false,
+            "reason": "Unreliable global correspondence: original retained",
+            "score": 797.9180555059464,
+            "initialScore": 848.5275706139922,
+            "residual": 28.247443344592206,
+            "ncc": 0.3226490165769848,
+            "luminanceResidual": 35.505663606581564,
+            "hitBounds": true,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 3.7199999999999998,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 28.550574652096422,
+            "workingSize": [
+              256,
+              124
+            ],
+            "maskCoverage": 0,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": null,
+          "fallbackReason": "Unreliable global correspondence: original retained"
+        },
+        {
+          "id": "p1-2",
+          "pass": 1,
+          "core": [
+            1365,
+            0,
+            2048,
+            384
+          ],
+          "box": [
+            1228,
+            0,
+            2048,
+            461
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/2-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:09.868Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "8419fa2d69a30e0da25ecb26a2dc79f1e5bdf6b17104b1bc78ef2446781d24b7",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/2-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-2-attempt1.png",
+              "width": 1672,
+              "height": 940,
+              "sha256": "860593a3d956f251c08a3f8c8eac69cf9c2270ad898366477bb034a1e11bde2d"
+            }
+          ],
+          "status": "rejected",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "8419fa2d69a30e0da25ecb26a2dc79f1e5bdf6b17104b1bc78ef2446781d24b7",
+          "registration": {
+            "tx": -7,
+            "ty": 2,
+            "scale": 1.0330000000000001,
+            "rot": 0,
+            "reliable": false,
+            "reason": "Unreliable global correspondence: original retained",
+            "score": 300.69302705035415,
+            "initialScore": 402.7472550830524,
+            "residual": 17.34050250282137,
+            "ncc": 0.13509384474163488,
+            "luminanceResidual": 15.957567084191465,
+            "hitBounds": true,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 4.32,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 13.24449189433229,
+            "workingSize": [
+              256,
+              144
+            ],
+            "maskCoverage": 0,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": null,
+          "fallbackReason": "Unreliable global correspondence: original retained"
+        },
+        {
+          "id": "p1-3",
+          "pass": 1,
+          "core": [
+            0,
+            384,
+            683,
+            768
+          ],
+          "box": [
+            0,
+            307,
+            820,
+            845
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/3-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:10.344Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:538), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "052b24cc5fdd94c2504bc68e9d80bca22b9de7867ee42cecedbf60dee6a3cbcc",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/3-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-3-attempt1.png",
+              "width": 1547,
+              "height": 1016,
+              "sha256": "d544885a3799691d9489350826c09e87c7c095eed14b9d08ca104d17ea0a2415"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:538), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "052b24cc5fdd94c2504bc68e9d80bca22b9de7867ee42cecedbf60dee6a3cbcc",
+          "registration": {
+            "tx": -6.85,
+            "ty": -5,
+            "scale": 0.9616,
+            "rot": 0.00023561944901923448,
+            "reliable": true,
+            "reason": null,
+            "score": 119.13354972148959,
+            "initialScore": 140.88563825692552,
+            "residual": 10.914831639630984,
+            "ncc": 0.5297198561573047,
+            "luminanceResidual": 13.396140563132539,
+            "hitBounds": true,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 5.04,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 1.8485795396849096,
+            "workingSize": [
+              256,
+              168
+            ],
+            "maskCoverage": 0.1213439689759922,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        },
+        {
+          "id": "p1-4",
+          "pass": 1,
+          "core": [
+            683,
+            384,
+            1365,
+            768
+          ],
+          "box": [
+            547,
+            307,
+            1501,
+            845
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/4-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:10.827Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (954:538), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "b521f4b6d3690b12da238f2447f34e6d30d724fa5b53e964fa656e0452a0478e",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/4-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-4-attempt1.png",
+              "width": 1670,
+              "height": 941,
+              "sha256": "d9df6aeb3c794c11b37b2b35af7d420fc6d35412e9e42cf0b771dec74faf765f"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (954:538), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "b521f4b6d3690b12da238f2447f34e6d30d724fa5b53e964fa656e0452a0478e",
+          "registration": {
+            "tx": -3.4,
+            "ty": -4.300000000000001,
+            "scale": 0.9904000000000002,
+            "rot": -0.004712388980384691,
+            "reliable": true,
+            "reason": null,
+            "score": 299.42270738889897,
+            "initialScore": 821.9608145539379,
+            "residual": 17.30383504859252,
+            "ncc": 0.9899273825441255,
+            "luminanceResidual": 8.62739192950066,
+            "hitBounds": true,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 4.32,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 48.58602003818639,
+            "workingSize": [
+              256,
+              144
+            ],
+            "maskCoverage": 0.36181756631558853,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        },
+        {
+          "id": "p1-5",
+          "pass": 1,
+          "core": [
+            1365,
+            384,
+            2048,
+            768
+          ],
+          "box": [
+            1228,
+            307,
+            2048,
+            845
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/5-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:11.318Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:538), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "d90149914e949d7bdffc921a3f97cf83901a1be2ff33a2e68fc71f25195c56f4",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/5-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-5-attempt1.png",
+              "width": 1548,
+              "height": 1016,
+              "sha256": "24803df85205966125f7dba653ac215c97a2b12f871c038e2398b9345b2ec06f"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:538), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "d90149914e949d7bdffc921a3f97cf83901a1be2ff33a2e68fc71f25195c56f4",
+          "registration": {
+            "tx": -1.75,
+            "ty": -2,
+            "scale": 0.988,
+            "rot": -0.002905973204570559,
+            "reliable": true,
+            "reason": null,
+            "score": 257.58544723517065,
+            "initialScore": 384.7256797499562,
+            "residual": 16.049468752428243,
+            "ncc": 0.9803888766081909,
+            "luminanceResidual": 8.94668503850324,
+            "hitBounds": false,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 5.04,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 21.36188032969164,
+            "workingSize": [
+              256,
+              168
+            ],
+            "maskCoverage": 0.28261879429656667,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        },
+        {
+          "id": "p1-6",
+          "pass": 1,
+          "core": [
+            0,
+            768,
+            683,
+            1152
+          ],
+          "box": [
+            0,
+            691,
+            820,
+            1152
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/6-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:11.777Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "e25c319537f305c9d9ade629ef19451e24efb32626b8896ca13e017d936d52d3",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/6-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-6-attempt1.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "96f54977b96532d0e29ab03d5658842af95a65e1f8fb745d2dac756b099632b5"
+            }
+          ],
+          "status": "rejected",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "e25c319537f305c9d9ade629ef19451e24efb32626b8896ca13e017d936d52d3",
+          "registration": {
+            "tx": -7.550000000000001,
+            "ty": 2.15,
+            "scale": 0.9664000000000001,
+            "rot": -0.006911503837897545,
+            "reliable": false,
+            "reason": "Unreliable global correspondence: original retained",
+            "score": 377.84575694469817,
+            "initialScore": 593.7245471866963,
+            "residual": 19.438254987130357,
+            "ncc": 0.6078858731206402,
+            "luminanceResidual": 18.070019172070722,
+            "hitBounds": true,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 4.32,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 17.59032271494468,
+            "workingSize": [
+              256,
+              144
+            ],
+            "maskCoverage": 0,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": null,
+          "fallbackReason": "Unreliable global correspondence: original retained"
+        },
+        {
+          "id": "p1-7",
+          "pass": 1,
+          "core": [
+            683,
+            768,
+            1365,
+            1152
+          ],
+          "box": [
+            547,
+            691,
+            1501,
+            1152
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/7-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:12.242Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (954:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "e409296a7d2aaad0855fb4553e0adcab084a044aaf31bf82a8a4a4bb4c5b5c7c",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/7-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-7-attempt1.png",
+              "width": 1804,
+              "height": 872,
+              "sha256": "428ce5c6652254e7f63cbec54f25bddf40a017d23bfee7ad48257b66ce8ddc8d"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (954:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "e409296a7d2aaad0855fb4553e0adcab084a044aaf31bf82a8a4a4bb4c5b5c7c",
+          "registration": {
+            "tx": -0.75,
+            "ty": 0,
+            "scale": 0.998,
+            "rot": 0.002905973204570559,
+            "reliable": true,
+            "reason": null,
+            "score": 285.4950127786414,
+            "initialScore": 376.72433831022965,
+            "residual": 16.896597668721398,
+            "ncc": 0.9841865185336394,
+            "luminanceResidual": 11.745018151400132,
+            "hitBounds": false,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 3.7199999999999998,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 49.960758868295,
+            "workingSize": [
+              256,
+              124
+            ],
+            "maskCoverage": 0.6443779050321333,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        },
+        {
+          "id": "p1-8",
+          "pass": 1,
+          "core": [
+            1365,
+            768,
+            2048,
+            1152
+          ],
+          "box": [
+            1228,
+            691,
+            2048,
+            1152
+          ],
+          "master": {
+            "width": 2048,
+            "height": 1152,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png"
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/8-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:27:12.742Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "b3fed7af9b64beae1e064e11b92ddac4a0e5e348957ff670b138cf2aa9973e56",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/8-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass1/p1-8-attempt1.png",
+              "width": 1672,
+              "height": 941,
+              "sha256": "8d21aafdfab60d6c781928c9f5139d7e96fc02694d2ce26f3b12ad88cc787c91"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (820:461), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "b3fed7af9b64beae1e064e11b92ddac4a0e5e348957ff670b138cf2aa9973e56",
+          "registration": {
+            "tx": 2,
+            "ty": -0.6,
+            "scale": 1.0362,
+            "rot": -0.0022776546738525996,
+            "reliable": true,
+            "reason": null,
+            "score": 449.3836043560305,
+            "initialScore": 541.2464552368599,
+            "residual": 21.198669872329972,
+            "ncc": 0.9806961255853317,
+            "luminanceResidual": 15.802188553869494,
+            "hitBounds": true,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 4.32,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 39.24073202841228,
+            "workingSize": [
+              256,
+              144
+            ],
+            "maskCoverage": 0.36437647978727955,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        },
+        {
+          "id": "p2-0",
+          "pass": 2,
+          "core": [
+            3440,
+            1500,
+            4760,
+            2860
+          ],
+          "box": [
+            3176,
+            1228,
+            5024,
+            3132
+          ],
+          "master": {
+            "pass": 1,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/M1.png",
+            "width": 8192,
+            "height": 4608,
+            "assemblyDimensions": [
+              3582,
+              2015
+            ],
+            "sha256": "a3b465db9a06fa2c9b1f6eaaea9e5b79585c046e800f296a0ad0c1051da1aff6",
+            "accepted": 5,
+            "rejected": [
+              {
+                "id": "p1-0",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-1",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-2",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-6",
+                "reason": "Unreliable global correspondence: original retained"
+              }
+            ]
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/0-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:35:25.544Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (1848:1904), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "810d66675df0dc1895a539f6371e56d00a265bdb574619ad2ddc892134ef9af3",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/0-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/p2-0-attempt1.png",
+              "width": 1236,
+              "height": 1273,
+              "sha256": "b188f38c40d5ebe3396ab1f4600676af616f1e9869c38346f2f838d10b16bdda"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (1848:1904), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "810d66675df0dc1895a539f6371e56d00a265bdb574619ad2ddc892134ef9af3",
+          "registration": {
+            "tx": 0,
+            "ty": 0,
+            "scale": 1,
+            "rot": -0.0021991148575128553,
+            "reliable": true,
+            "reason": null,
+            "score": 220.8615122756297,
+            "initialScore": 239.37845199634378,
+            "residual": 14.86141017116578,
+            "ncc": 0.9956631018068804,
+            "luminanceResidual": 6.80021073897875,
+            "hitBounds": false,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 7.92,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 60.15550952451092,
+            "workingSize": [
+              256,
+              264
+            ],
+            "maskCoverage": 0.4413040866882624,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        },
+        {
+          "id": "p2-1",
+          "pass": 2,
+          "core": [
+            2720,
+            3220,
+            4360,
+            3740
+          ],
+          "box": [
+            2392,
+            3116,
+            4688,
+            3844
+          ],
+          "master": {
+            "pass": 1,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/M1.png",
+            "width": 8192,
+            "height": 4608,
+            "assemblyDimensions": [
+              3582,
+              2015
+            ],
+            "sha256": "a3b465db9a06fa2c9b1f6eaaea9e5b79585c046e800f296a0ad0c1051da1aff6",
+            "accepted": 5,
+            "rejected": [
+              {
+                "id": "p1-0",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-1",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-2",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-6",
+                "reason": "Unreliable global correspondence: original retained"
+              }
+            ]
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/1-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:35:26.017Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (2296:728), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "78ae89215fcd246c8eb955d844fd3c268f8f4bd404ed7f21a5b7e7293de51d33",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/1-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/p2-1-attempt1.png",
+              "width": 2164,
+              "height": 727,
+              "sha256": "631f7fdfe49b8969ce8b3d4df8ea89c5371d7a26df0c3d0a617a0fe44a0e362f"
+            }
+          ],
+          "status": "rejected",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (2296:728), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "78ae89215fcd246c8eb955d844fd3c268f8f4bd404ed7f21a5b7e7293de51d33",
+          "registration": {
+            "tx": -0.4,
+            "ty": -1.4500000000000002,
+            "scale": 0.9871999999999996,
+            "rot": -0.0012566370614359185,
+            "reliable": false,
+            "reason": "Generated aspect mismatch exceeds 1.5%",
+            "score": 411.0264043885757,
+            "initialScore": 653.7591757451248,
+            "residual": 20.27378613847388,
+            "ncc": 0.9609183159558484,
+            "luminanceResidual": 17.693843919780644,
+            "hitBounds": false,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 2.4299999999999997,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 63.45776398263894,
+            "workingSize": [
+              256,
+              81
+            ],
+            "maskCoverage": 0,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": null,
+          "fallbackReason": "Generated aspect mismatch exceeds 1.5%"
+        },
+        {
+          "id": "p2-2",
+          "pass": 2,
+          "core": [
+            3720,
+            2780,
+            4880,
+            3660
+          ],
+          "box": [
+            3488,
+            2604,
+            5112,
+            3836
+          ],
+          "master": {
+            "pass": 1,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/M1.png",
+            "width": 8192,
+            "height": 4608,
+            "assemblyDimensions": [
+              3582,
+              2015
+            ],
+            "sha256": "a3b465db9a06fa2c9b1f6eaaea9e5b79585c046e800f296a0ad0c1051da1aff6",
+            "accepted": 5,
+            "rejected": [
+              {
+                "id": "p1-0",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-1",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-2",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-6",
+                "reason": "Unreliable global correspondence: original retained"
+              }
+            ]
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/2-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:35:26.503Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (1624:1232), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "360bf608cc1161b8bcaab9fa2797b24db65451871d01890f1f194894fab7fe48",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/2-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/p2-2-attempt1.png",
+              "width": 1440,
+              "height": 1092,
+              "sha256": "6901aa8de4a68ea66bdb320b3b6784947e6f199170bdd7d45bd9805ed3a0e3bf"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (1624:1232), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "360bf608cc1161b8bcaab9fa2797b24db65451871d01890f1f194894fab7fe48",
+          "registration": {
+            "tx": 0,
+            "ty": -0.15,
+            "scale": 0.9988000000000001,
+            "rot": 0.00007853981633974496,
+            "reliable": true,
+            "reason": null,
+            "score": 163.85666212659075,
+            "initialScore": 218.517705835716,
+            "residual": 12.800650847772966,
+            "ncc": 0.995010094234293,
+            "luminanceResidual": 7.8109387490503375,
+            "hitBounds": false,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 5.819999999999999,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 75.04700467496471,
+            "workingSize": [
+              256,
+              194
+            ],
+            "maskCoverage": 0.7392440230527144,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        },
+        {
+          "id": "p2-3",
+          "pass": 2,
+          "core": [
+            4560,
+            2320,
+            6640,
+            3700
+          ],
+          "box": [
+            4144,
+            2044,
+            7056,
+            3976
+          ],
+          "master": {
+            "pass": 1,
+            "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/M1.png",
+            "width": 8192,
+            "height": 4608,
+            "assemblyDimensions": [
+              3582,
+              2015
+            ],
+            "sha256": "a3b465db9a06fa2c9b1f6eaaea9e5b79585c046e800f296a0ad0c1051da1aff6",
+            "accepted": 5,
+            "rejected": [
+              {
+                "id": "p1-0",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-1",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-2",
+                "reason": "Unreliable global correspondence: original retained"
+              },
+              {
+                "id": "p1-6",
+                "reason": "Unreliable global correspondence: original retained"
+              }
+            ]
+          },
+          "target": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/3-target.png",
+          "attempts": [
+            {
+              "number": 1,
+              "status": "generated",
+              "at": "2026-10-16T14:35:26.995Z",
+              "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (2912:1932), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+              "contextHash": "91d8d753c4b94b9a86d5423aad711161977c7a238eeffd89c1207df934b9dc74",
+              "targetHash": "76ffabfd7e0a8ebe59bbbac4e32e5cef8688658a48a033c46774a00f42328faa",
+              "tool": "image_gen.imagegen",
+              "settings": {
+                "transparent_background": false,
+                "referenced_image_paths": [
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/context.png",
+                  "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/3-target.png"
+                ]
+              },
+              "requestedSize": "maximum practical native resolution; target aspect",
+              "nativePath": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/pass2/p2-3-attempt1.png",
+              "width": 1539,
+              "height": 1022,
+              "sha256": "0c69041ebebd169cdef923d1f72975ac7f53cc9fbebf6609b9a034f4832e2d44"
+            }
+          ],
+          "status": "accepted",
+          "sourceContextHash": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
+          "prompt": "1=original: identity, geometry, color and light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve original contours, imperfections and focus falloff. Optical clarity, natural edge transitions, spatially varied texture. Repair inherited compression artifacts. Avoid invented structures or marks, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain and blanket sharpening.\nWide Roadster event poster photograph. Preserve exact vehicle lineup, inverted flying car, smoke geometry, ramp and stage lighting. Preserve the ROADSTER title exactly; never invent lettering. Original colours: black background, metallic silver, warm title, red rails.\nRigid objects: preserve silhouette, proportions and existing hardware. Do not invent fins, panel seams, rivets, spokes or lattice members. Keep repeating structures aligned. Smoke: preserve exact irregular lobes, soft fringes, palette and volume; no uniformly sharp surfaces. Black empty areas must remain quiet, with no stars, patterns, added objects or invented detail. Bright clipped lights stay soft.\nReturn only image 2, the target crop, matching its entire framing and aspect ratio (2912:1932), without borders, reframing or returning the full scene. Image 1 is the complete original supplied as context. Use maximum practical supported native resolution. Enhance the existing image only.",
+          "targetHash": "76ffabfd7e0a8ebe59bbbac4e32e5cef8688658a48a033c46774a00f42328faa",
+          "registration": {
+            "tx": 0,
+            "ty": 0,
+            "scale": 0.999,
+            "rot": 0,
+            "reliable": true,
+            "reason": null,
+            "score": 224.3032525333948,
+            "initialScore": 230.25616456663073,
+            "residual": 14.976757076663652,
+            "ncc": 0.9912568191574355,
+            "luminanceResidual": 10.637064890420314,
+            "hitBounds": false,
+            "bounds": {
+              "tx": 7.68,
+              "ty": 5.1,
+              "scale": 0.04,
+              "rot": 0.006981317007977318
+            },
+            "std": 49.692518446917866,
+            "workingSize": [
+              256,
+              170
+            ],
+            "maskCoverage": 0.6619172501705448,
+            "color": "smooth low-frequency RGB difference, sigma12 at 256px width, clamped ±18 levels",
+            "localWarp": false
+          },
+          "selectedAttempt": 1,
+          "fallbackReason": null
+        }
+      ],
+      "masters": [
+        {
+          "pass": 1,
+          "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/M1.png",
+          "width": 8192,
+          "height": 4608,
+          "assemblyDimensions": [
+            3582,
+            2015
+          ],
+          "sha256": "a3b465db9a06fa2c9b1f6eaaea9e5b79585c046e800f296a0ad0c1051da1aff6",
+          "accepted": 5,
+          "rejected": [
+            {
+              "id": "p1-0",
+              "reason": "Unreliable global correspondence: original retained"
+            },
+            {
+              "id": "p1-1",
+              "reason": "Unreliable global correspondence: original retained"
+            },
+            {
+              "id": "p1-2",
+              "reason": "Unreliable global correspondence: original retained"
+            },
+            {
+              "id": "p1-6",
+              "reason": "Unreliable global correspondence: original retained"
+            }
+          ]
+        },
+        {
+          "pass": 2,
+          "path": "/workspace/scratch/ae8c2b5f8b01/roadster-poster-upscale/09-poster/M2.png",
+          "width": 8192,
+          "height": 4608,
+          "assemblyDimensions": [
+            8192,
+            4608
+          ],
+          "sha256": "a7c89e61354bcc3d96c33a0792b41ba291d0d0b1916b5fdae915dc60ccad9c73",
+          "accepted": 3,
+          "rejected": [
+            {
+              "id": "p2-1",
+              "reason": "Generated aspect mismatch exceeds 1.5%"
+            }
+          ]
+        }
+      ],
+      "qa": [
+        {
+          "pass": 1,
+          "at": "2026-10-16T14:34:56.619Z",
+          "review": "full image and 8 actual-100%-pixel focal/overlap samples",
+          "note": "Full and 100% focal/overlap review: title retains prior pixels; vehicle silhouettes coherent, no doubled rails or visible blend seams. Four unreliable patches retained prior pixels; five accepted with confidence masks."
+        },
+        {
+          "pass": 2,
+          "at": "2026-10-16T14:38:51.287Z",
+          "review": "full image and 8 actual-100%-pixel focal/overlap samples",
+          "note": "Final full-image and actual 100% focal/overlap review: no visible seams or doubled rigid edges; original lettering preserved. Three focal patches accepted; wide lineup patch rejected for aspect mismatch and prior master retained. Detail is reconstructed, not recovered."
+        }
+      ],
+      "assemblyRationale": {
+        "width": 3582,
+        "height": 2015,
+        "scale": 1.7490706319702602,
+        "reason": "Do not exceed weakest native crop scale, capped at 2x original; never reduce original dimensions",
+        "cropNativeScales": [
+          2.0390243902439025,
+          1.8909853249475892,
+          2.0390243902439025,
+          1.8865853658536584,
+          1.7490706319702602,
+          1.8878048780487804,
+          2.0390243902439025,
+          1.8909853249475892,
+          2.0390243902439025
+        ]
+      }
+    }
+  ]
+}

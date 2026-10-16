@@ -13,3 +13,6 @@ Remaining live checks on the XPS: theme switch and switch back; launcher, menus,
 No preview.png is included because no live desktop screenshot was captured. Public submission also requires wallpaper source/licence confirmation.
 
 Repository packaging: 03-hover-8k.webp uses lossless WebP because the GitHub blob API rejected the original 54 MiB PNG. Full decoded RGB byte hashes match the original PNG exactly. The other seven PNGs are unchanged. Repository SHA256SUMS reflects these packaged bytes.
+
+Poster addition: ninth wallpaper, lossless sRGB PNG at 8192 × 4608. Fully decoded and visually reviewed at full-frame and 100% detail. Existing eight wallpaper bytes and default selection preserved.
+PASS for the ninth-image update: portable repository checks and five Node tests; all nine image checksums; real upstream headless Git-installed staging, nine-image cycle, default, wraparound and remembered selection. Live desktop interaction is not implied by this check.
