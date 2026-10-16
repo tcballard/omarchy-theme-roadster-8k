@@ -53,6 +53,8 @@ export function check(base=root) {
     const lum=hex=>hex.slice(1).match(/../g).map(v=>parseInt(v,16)/255).map(v=>v<=0.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
     const [a,b]=[lum(palette.foreground),lum(palette.background)].sort((a,b)=>a-b);
     assert((b+.05)/(a+.05)>=4.5,'Foreground/background contrast below 4.5:1');
+    if(tree.includes('icons.theme')) assert(/^Yaru(-[a-z]+)*\n$/.test(read('icons.theme')),'icons.theme must name a single Yaru icon theme');
+    if(tree.includes('chromium.theme')) assert(/^(\d{1,3}),(\d{1,3}),(\d{1,3})\n$/.test(read('chromium.theme')) && read('chromium.theme').trim().split(',').every(v=>+v<=255),'chromium.theme must be one r,g,b line');
   } else if(c.kind==='app') {
     assert(read('Cargo.toml').includes(`name = "${c.slug}"`));
     assert(read('src/main.rs').includes(JSON.stringify(c.id)));
