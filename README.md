@@ -41,9 +41,9 @@ Red marks focused controls, active borders, selected rows and shell activity. Si
 
 The default is `backgrounds/01-wall-ride-8k.png`. The other nine images remain available through wallpaper cycling. Omarchy remembers your selection when switching away and back. Applying the current theme again cycles to the next wallpaper.
 
-8K describes export dimensions, not native AI generation. Images retain their original proportions. The set includes the ROADSTER event poster at 8192 × 4608. Its original lettering is preserved; see [processing evidence](docs/POSTER-PROCESSING.json).
+8K describes export dimensions, not native AI generation. Images retain their original proportions, except Starlight, which is extended sideways for desktop use. The set includes the ROADSTER event poster at 8192 × 4608. Its original lettering is preserved; see [processing evidence](docs/POSTER-PROCESSING.json).
 
-The Starlight artwork adds a square 8192 × 8192 scene with raised doors and a starry sky. [Processing details](docs/STARLIGHT-PROCESSING.json).
+Starlight is a 16:9 desktop scene at 8192 × 4608, extended sideways to keep the full car, both raised doors and rear wing visible beneath the starry sky. [Processing details](docs/STARLIGHT-PROCESSING.json).
 
 ## Validation
 

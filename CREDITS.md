@@ -8,6 +8,6 @@ Community badge artwork: https://github.com/tcballard/omarchy-badges, pinned to 
 
 ## Roadster assets
 
-The ten Roadster images were supplied by Tom Ballard for this theme and processed using contextual-image-upscale, two passes per image. The Starlight addition preserves the source artwork’s square composition and cinematic render character. The original creator/photographer, source URLs and media licence have not been established; the MIT code licence does not grant rights to these photographs. No Tesla affiliation is claimed.
+The ten Roadster images were supplied by Tom Ballard for this theme and processed using contextual-image-upscale, two passes per image. Starlight was subsequently extended sideways with built-in image generation into a 16:9 desktop composition, preserving the cinematic render character while reconstructing scene detail. The original creator/photographer, source URLs and media licence have not been established; the MIT code licence does not grant rights to these photographs. No Tesla affiliation is claimed.
 
 The wall-ride image is the default. Real desktop screenshots appear in the README; registry submission remains pending.

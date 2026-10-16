@@ -10,15 +10,15 @@
     "provenance": "User-supplied cinematic automotive artwork; media rights separate from code licence."
   },
   "export": {
-    "file": "roadster-starlight-8k.png",
+    "file": "roadster-starlight-16x9-8k.png",
     "dimensions": [
       8192,
-      8192
+      4608
     ],
     "space": "srgb",
     "depth": "uchar",
-    "bytes": 38736392,
-    "sha256": "b2b8185c2e8f8aced6baeb4d085636955b0ccac5855704e241b7e934343e1cb7",
+    "bytes": 19380581,
+    "sha256": "b3302e21fbd69f42bf01412a772ac6ee8795a6c0bcfb2729a91d52e46b05c6a5",
     "decoded": true
   },
   "method": {
@@ -172,5 +172,30 @@
       "reason": "Retain source upper star placement, ambiguous cabin detail and unreadable plate. Three top-row registered patches contribute no pixels within the protected sky; accepted registration count differs from effective contribution."
     }
   },
-  "detail": "AI reconstructed; 8K describes export dimensions, not native generation."
+  "detail": "AI reconstructed; 8K describes export dimensions, not native generation.",
+  "previous_square_export": {
+    "file": "roadster-starlight-8k.png",
+    "dimensions": [
+      8192,
+      8192
+    ],
+    "space": "srgb",
+    "depth": "uchar",
+    "bytes": 38736392,
+    "sha256": "b2b8185c2e8f8aced6baeb4d085636955b0ccac5855704e241b7e934343e1cb7",
+    "decoded": true
+  },
+  "widescreen_revision": {
+    "date": "2026-10-16",
+    "tool": "built-in image_gen",
+    "method": "AI scene extension and reframing to 16:9, then proportional Lanczos3 export; no new contextual enhancement passes.",
+    "native_dimensions": [
+      1672,
+      941
+    ],
+    "native_sha256": "66ce3db994b67ccfa14686bf346be73abeb288bea8219da1f11eea357dac8dd7",
+    "prompt": "Use case: precise-object-edit. Asset: 16:9 desktop wallpaper. Outpaint this square Starlight artwork LEFT AND RIGHT into a wide 16:9 landscape at maximum practical native resolution (prefer 2048x1152). Keep the complete original square scene centered at the same proportions and entirely visible, extending starry night sky, distant mountain horizon and ground naturally on both sides. Entire car stays in lower middle at roughly 52% canvas width, all wheels, front nose, rear wing and both tall raised scissor doors fully visible, generous side margins. Do not crop vertically, do not enlarge car to fill width, do not stretch the car. Preserve exact car design, five-spoke wheels, panel edges, wing, four rear nozzles, door angles, existing cabin details, starfield character. No extra vehicles, people, lettering, borders or panels. One seamless full-bleed landscape. Preserve natural nearly black sky and silver body, warm amber cabin glow and red taillights. Extend only environment; retain cinematic restrained photographic lighting.",
+    "ratio_adjustment": "Native aspect is within 0.1% of 16:9; negligible centred edge crop on export. Car is not stretched.",
+    "qa": "Full-frame reviewed: both raised doors, both visible wheels, front nose and complete rear wing in frame with broad side margins. AI edit reconstructs scene detail; original pixels are not claimed unchanged."
+  }
 }
