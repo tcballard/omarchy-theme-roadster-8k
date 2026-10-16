@@ -1,3 +1,5 @@
-# Wallpapers
+# Roadster wallpapers
 
-Place licensed wallpaper files directly in this directory and record source, creator, licence and redistribution permission in CREDITS.md. This starter intentionally bundles no wallpaper and makes no media-rights claim.
+Eight lossless 8K images from the user-supplied photographs. 01-wall-ride-8k.png is first in Omarchy's sorted list. Each has two contextual enhancement passes; original framing and aspect ratio are preserved. See ../CREDITS.md and ../SHA256SUMS.
+
+The hover image uses lossless WebP, verified pixel-identical to its PNG master; the other seven remain PNG. Original PNG masters are retained in the separate wallpaper download.

@@ -18,3 +18,4 @@ jobs:
         with:
           node-version: "22"
       - run: ./tests/run
+      - run: sha256sum -c SHA256SUMS

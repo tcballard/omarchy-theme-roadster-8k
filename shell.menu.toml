@@ -1,0 +1,14 @@
+# Complete menu section; upstream 51bfd1dbaa1b5f790e19623faf2745945d40c796.
+[menu]
+background                = "#090A0F"
+background-alpha          = 1.0
+text                      = "#D7D8DC"
+border = "#FF2448"
+border-alpha              = 1.0
+scrim                     = "#090A0F"
+scrim-alpha               = 0.5
+selected-background = "#FF2448"
+selected-background-alpha = 0.12
+selected-text = "#D7D8DC"
+selected-border = "#FF2448"
+selected-border-alpha = 1

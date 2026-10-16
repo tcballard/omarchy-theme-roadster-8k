@@ -1,7 +1,9 @@
 # Architecture
 
-`colors.toml` is the source semantic palette. Omarchy derives supported application configuration from it; do not edit generated current-theme output.
+colors.toml owns the semantic palette. Omarchy generates supported application configuration from it.
 
-The starter includes no shell overrides, install hooks, Lua, wallpapers or preview. Add licensed media under backgrounds and record its provenance in CREDITS.md. Add section-specific shell overrides only after verifying the target Omarchy contract.
+shell.bar.toml, shell.controls.toml, shell.menu.toml and shell.launcher.toml replace complete upstream sections. They carry defaults from Quattro revision 51bfd1dbaa1b5f790e19623faf2745945d40c796 and change colours and focus/selection borders. Reconcile these sections when upgrading. Other shell sections remain generated; there is no full shell.toml override or install hook.
 
-The portable validator accepts flat quoted hex colours and checks text contrast. It is not a complete TOML parser or registry validator.
+The eight backgrounds/ images files are the verified 8K exports. Alphabetical order makes 01-wall-ride-8k.png the first wallpaper. SHA256SUMS records exact bytes. User wallpaper history can override the initial selection after first use.
+
+Portable validation covers metadata, palette syntax, contrast, links and workflow policy. Offline upstream checks and remaining live gates are recorded in docs/VALIDATION.md.

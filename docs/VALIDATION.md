@@ -1,0 +1,15 @@
+# Validation — Roadster
+
+Target: omacom/omarchy Quattro 51bfd1dbaa1b5f790e19623faf2745945d40c796. Date: 2026-10-16.
+
+PASS: Real upstream headless theme application in an isolated account directory; local installation and Git-provenance staging; template generation (24 configuration files); parsed TOML/JSON; no unresolved template placeholders; red shell controls/bar/menu/countdown/image-picker tokens; default wall-ride selection; second application cycles; switch away and back restores remembered wallpaper; installer refuses existing destination; all eight previously decoded/verified 8K PNGs match their hashes.
+
+Contrast: foreground/background 13.89:1; foreground/selection 10.48:1; accent/background 5.27:1; muted/background 5.40:1.
+
+NOT RUN: bundled Rust helper (cargo unavailable), registry validator, live desktop rendering and input. This offline check does not certify rendering, GTK application appearance or marketplace approval.
+
+Remaining live checks on the XPS: theme switch and switch back; launcher, menus, notification, lock and authentication screens; focused/selected/disabled states; bar at each used orientation; 100% and mixed display scales; terminal, editor and GTK app reloads; shell restart/login; wallpaper crop on the installed monitor. Record Omarchy version and scale. Preserve the prior theme and wallpaper before testing.
+
+No preview.png is included because no live desktop screenshot was captured. Public submission also requires wallpaper source/licence confirmation.
+
+Repository packaging: 03-hover-8k.webp uses lossless WebP because the GitHub blob API rejected the original 54 MiB PNG. Full decoded RGB byte hashes match the original PNG exactly. The other seven PNGs are unchanged. Repository SHA256SUMS reflects these packaged bytes.

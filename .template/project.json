@@ -3,13 +3,13 @@
   "templateVersion": "0.1.0",
   "kind": "theme",
   "owner": "tcballard",
-  "repo": "omarchy-theme-template",
-  "slug": "omarchy-theme-starter",
-  "name": "Omarchy Theme Starter",
+  "repo": "omarchy-theme-roadster-8k",
+  "slug": "theme-roadster-8k",
+  "name": "Roadster 8K",
   "author": "Tom Ballard",
-  "id": "io.github.tcballard.theme_starter",
-  "description": "An original semantic palette to develop into your own Omarchy theme.",
+  "id": "io.github.tcballard.theme_roadster_8k",
+  "description": "Near-black surfaces, silver text and vivid red accents, with eight 8K Roadster wallpapers.",
   "year": "2026",
   "inspiration": "",
-  "initialized": false
+  "initialized": true
 }
