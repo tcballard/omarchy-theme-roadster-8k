@@ -35,7 +35,7 @@ This applies the theme and replaces an existing installation from this repositor
 | Highlights | `#F5F5F7` |
 | Selection | `#382029` |
 
-Red marks focused controls, active borders, selected rows and shell activity. Silver text stays readable against the near-black background. Terminal and editor colours retain distinct warning, error and success roles. Fonts and spacing follow native defaults.
+Red marks focused controls, active borders, selected rows and shell activity. GNOME apps such as Files use the red Yaru icon set, and Chromium-family browsers get a neutral black colour scheme. Silver text stays readable against the near-black background. Terminal and editor colours retain distinct warning, error and success roles. Fonts and spacing follow native defaults.
 
 ## Wallpapers
 
